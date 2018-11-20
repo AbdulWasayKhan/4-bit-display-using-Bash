@@ -8,24 +8,24 @@ done
 
 	if (($1 & 1))
 	then 
-		gpio write 1 1	
+		gpio write 3 1	
 	else
-		gpio write 1 0
+		gpio write 3 0
 	fi
 
 	if (($1 >> 1 &1))
 	then
 	
-        	gpio write 3 1
+        	gpio write 2 1
 	else  
-		gpio write 3 0
+		gpio write 2 0
 	fi
 
 	if (($1 >> 2 &1))
 	then
-        	gpio write 2 1  
+        	gpio write 1 1  
 	else
-		gpio write 2 0
+		gpio write 1 0
 	fi
 	
 	if (($1 >> 3 & 1))
